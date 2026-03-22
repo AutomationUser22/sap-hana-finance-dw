@@ -1,0 +1,10 @@
+# SAP HANA Connection Configuration
+# Copy this to config.yaml and update with your HANA instance details
+
+hana:
+  host: "your-hana-host-ip"
+  port: 39015
+  user: "ETL_USER"
+  password: "your-password"
+  database: "HXE"
+  schema: "FINANCE_DW"
