@@ -14,7 +14,11 @@ st.caption("Star schema warehouse on SAP HANA Express — European entity financ
 st.markdown("---")
 
 if not has_data():
-    st.warning("No data loaded. Run `python etl_pipeline.py` to load financial data into HANA.")
+    st.info("📡 This dashboard connects to a live SAP HANA Express instance running on AWS EC2. "
+        "The EC2 instance is currently stopped to avoid charges. "
+        "When running, the ETL pipeline loads 10,000 balanced GL postings across 10 European entities "
+        "into a star schema with 6 dimensions on HANA Column Store. "
+        "See the GitHub repo for the full ETL pipeline code, schema design, and screenshots.")
     st.stop()
 
 # ── KPIs ──
